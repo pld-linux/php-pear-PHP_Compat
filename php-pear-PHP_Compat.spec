@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          PHP
-%define         _subclass       Compat
+%define		_class		PHP
+%define		_subclass	Compat
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
