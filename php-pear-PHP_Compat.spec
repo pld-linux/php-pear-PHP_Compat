@@ -8,7 +8,7 @@ Summary:	%{_pearname} - provides missing functionality for older versions of PHP
 Summary(pl):	%{_pearname} - dostarczenie brakuj±cej funkcjonalno¶ci dla starszych wersji PHP
 Name:		php-pear-%{_pearname}
 Version:	1.3.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
