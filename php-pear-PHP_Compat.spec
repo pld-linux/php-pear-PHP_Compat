@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		PHP
 %define		_subclass	Compat
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - provides missing functionality for older versions of PHP
