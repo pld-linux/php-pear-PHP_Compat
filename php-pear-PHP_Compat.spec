@@ -33,7 +33,6 @@ Functions:
 - is_a
 - scandir
 - array_combine
-- str_split (cvs only)
 
 This class has in PEAR status: %{_status}.
 
@@ -51,7 +50,6 @@ Funkcje:
 - is_a
 - scandir
 - array_combine
-- str_split (tylko wersja cvs)
 
 Ta klasa ma w PEAR status: %{_status}.
 
