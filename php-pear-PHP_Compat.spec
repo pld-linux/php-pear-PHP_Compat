@@ -4,8 +4,8 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Provides missing functionality for older versions of PHP
-Summary(pl):	%{_pearname} - Dostarcza brakuj±cej funkcjonalno¶ci dla starszych wersji PHP
+Summary:	%{_pearname} - provides missing functionality for older versions of PHP
+Summary(pl):	%{_pearname} - dostarczenie brakuj±cej funkcjonalno¶ci dla starszych wersji PHP
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
@@ -51,7 +51,7 @@ Funkcje:
 - is_a
 - scandir
 - array_combine
-- str_split (cvs only)
+- str_split (tylko wersja cvs)
 
 Ta klasa ma w PEAR status: %{_status}.
 
