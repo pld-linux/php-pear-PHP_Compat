@@ -34,7 +34,7 @@ Functions:
 - scandir
 - array_combine
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 PHP_Compat dostarcza (w postaci sta³ych oraz funkcji) brakuj±cej
