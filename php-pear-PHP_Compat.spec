@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - provides missing functionality for older versions of PHP
 Summary(pl):	%{_pearname} - dostarczenie brakuj±cej funkcjonalno¶ci dla starszych wersji PHP
 Name:		php-pear-%{_pearname}
-Version:	1.2.0
+Version:	1.3.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b7769ea24f2d7b3062946d22c220d7e0
+# Source0-md5:	094cdab624f532e89835f92804a2b6bf
 URL:		http://pear.php.net/package/PHP_Compat/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -26,6 +26,7 @@ Functions for older versions of PHP.
 Constants:
 - E_STRICT
 - PATH_SEPERATOR
+- ...
 
 Functions:
 - file_get_contents
@@ -33,6 +34,7 @@ Functions:
 - is_a
 - scandir
 - array_combine
+- ...
 
 In PEAR status of this package is: %{_status}.
 
@@ -43,6 +45,7 @@ funkcjonalno¶ci dla starszych wersji PHP.
 Sta³e:
 - E_STRICT
 - PATH_SEPERATOR
+- ...
 
 Funkcje:
 - file_get_contents
@@ -50,6 +53,7 @@ Funkcje:
 - is_a
 - scandir
 - array_combine
+- ...
 
 Ta klasa ma w PEAR status: %{_status}.
 
