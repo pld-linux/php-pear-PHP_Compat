@@ -8,11 +8,12 @@ Summary:	%{_pearname} - provides missing functionality for older versions of PHP
 Summary(pl):	%{_pearname} - dostarczenie brakuj±cej funkcjonalno¶ci dla starszych wersji PHP
 Name:		php-pear-%{_pearname}
 Version:	1.3.1
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	0bcaf45fe75b6cddc0bda4a272885c90
+Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/PHP_Compat/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -59,12 +60,14 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/{Function,Constant}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/{Constant,Function}
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 install %{_pearname}-%{version}/%{_subclass}/Constant/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Constant
 install %{_pearname}-%{version}/%{_subclass}/Function/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Function
 
