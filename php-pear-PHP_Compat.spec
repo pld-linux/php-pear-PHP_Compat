@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - provides missing functionality for older versions of PHP
 Summary(pl):	%{_pearname} - dostarczenie brakuj±cej funkcjonalno¶ci dla starszych wersji PHP
 Name:		php-pear-%{_pearname}
-Version:	1.4.1
+Version:	1.5.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	a1b51316d1ca82fa4023d2f99da1dace
+# Source0-md5:	4d73c451f4f3a8f9a0516bd26af7f652
 URL:		http://pear.php.net/package/PHP_Compat/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear >= 4:1.0-7
