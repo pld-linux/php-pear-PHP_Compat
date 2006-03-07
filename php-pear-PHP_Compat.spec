@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	4d73c451f4f3a8f9a0516bd26af7f652
 URL:		http://pear.php.net/package/PHP_Compat/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear >= 4:1.0-7
 BuildArch:	noarch
