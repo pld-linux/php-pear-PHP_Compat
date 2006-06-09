@@ -59,17 +59,6 @@ Funkcje:
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%prep
-%pear_package_setup
-
-%install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}
-%pear_package_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl):	Testy dla PEAR::%{_pearname}
@@ -83,6 +72,17 @@ Tests for PEAR::%{_pearname}.
 
 %description tests -l pl
 Testy dla PEAR::%{_pearname}.
+
+%prep
+%pear_package_setup
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
