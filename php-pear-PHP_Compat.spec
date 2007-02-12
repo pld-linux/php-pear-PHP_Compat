@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - provides missing functionality for older versions of PHP
-Summary(pl):	%{_pearname} - dostarczenie brakuj±cej funkcjonalno∂ci dla starszych wersji PHP
+Summary(pl.UTF-8):   %{_pearname} - dostarczenie brakujƒÖcej funkcjonalno≈õci dla starszych wersji PHP
 Name:		php-pear-%{_pearname}
 Version:	1.5.0
 Release:	1
@@ -40,11 +40,11 @@ Functions:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-PHP_Compat dostarcza (w postaci sta≥ych oraz funkcji) brakuj±cej
-funkcjonalno∂ci dla starszych wersji PHP.
+%description -l pl.UTF-8
+PHP_Compat dostarcza (w postaci sta≈Çych oraz funkcji) brakujƒÖcej
+funkcjonalno≈õci dla starszych wersji PHP.
 
-Sta≥e:
+Sta≈Çe:
 - E_STRICT
 - PATH_SEPERATOR
 - ...
@@ -61,7 +61,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -70,7 +70,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
